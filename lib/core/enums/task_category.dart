@@ -1,1 +1,1 @@
-enum TaskCategory { personel, work, study, shopping }
+enum TaskCategory { personel, work, study, shopping,health }

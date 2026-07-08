@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_list/core/constants/app_colors.dart';
 import 'package:todo_list/core/enums/task_category.dart';
 
 class CategroyHelper {
@@ -12,6 +13,8 @@ class CategroyHelper {
         return Colors.deepPurple;
       case TaskCategory.shopping:
         return Colors.brown;
+      case TaskCategory.health:
+        return AppColors.primary;
     }
   }
 
@@ -25,6 +28,8 @@ class CategroyHelper {
         return "Study";
       case TaskCategory.shopping:
         return "Shopping";
+        case TaskCategory.health:
+        return "Health";
     }
   }
 }
