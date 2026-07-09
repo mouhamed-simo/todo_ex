@@ -141,7 +141,6 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 35),
         child: FloatingActionButton(
           onPressed: () {
-
             // code
           },
           shape: const CircleBorder(),
@@ -151,15 +150,10 @@ class HomeScreen extends StatelessWidget {
           child: const Icon(Icons.add),
         ),
       ),
-     
+
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-   // bottomNavigationBar    (Menu)
-    bottomNavigationBar: BottomNavigationBar(
-      items: [
-BottomNavigationBarItem(icon: Icon(Icons.task),label: 'Tasks'),
-BottomNavigationBarItem(icon: Icon(Icons.calendar_today_outlined),label: 'Calendar'),
-BottomNavigationBarItem(icon: Icon(Icons.archive_outlined),label: 'Archive'),
-    ]),
+
+      // bottomNavigationBar    (Menu)
     );
   }
 }

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class SettingScreen extends StatelessWidget {
-  const SettingScreen({super.key});
+class ArchiveScreen extends StatelessWidget {
+  const ArchiveScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-       child: Text('SettingScreen'),
+       child: Text('ArchiveScreen'),
       ),
     );
   }

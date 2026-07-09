@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_list/core/constants/app_colors.dart';
 import 'package:todo_list/screens/home_screen.dart';
+import 'package:todo_list/screens/main_navigation.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -18,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
       if(!mounted) return;
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (_) => const HomeScreen()),
+        MaterialPageRoute(builder: (_) => const MainNavigation()),
       );
     });
   }
