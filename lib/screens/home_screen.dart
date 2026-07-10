@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_list/core/constants/app_colors.dart';
 import 'package:todo_list/core/enums/task_category.dart';
+import 'package:todo_list/screens/add_tasks_screen.dart';
 import 'package:todo_list/widget/inspiration_card.dart';
 import 'package:todo_list/widget/task_card.dart';
 
@@ -9,31 +10,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.menu, size: 30, color: AppColors.primary),
-        ),
-        centerTitle: true,
-        title: const Text(
-          'Focus',
-          style: TextStyle(
-            color: AppColors.primary,
-            fontFamily: 'Inter',
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.settings, size: 30, color: AppColors.primary),
-          ),
-        ],
-      ),
-
-      body: SingleChildScrollView(
+    return  SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(15.0),
           child: Column(
@@ -136,24 +113,7 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-      ),
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.only(bottom: 35),
-        child: FloatingActionButton(
-          onPressed: () {
-            // code
-          },
-          shape: const CircleBorder(),
-          backgroundColor: AppColors.primary,
-          foregroundColor: Colors.white,
-
-          child: const Icon(Icons.add),
-        ),
-      ),
-
-      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-
-      // bottomNavigationBar    (Menu)
-    );
+      );
+     
   }
 }
